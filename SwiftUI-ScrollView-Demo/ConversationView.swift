@@ -10,7 +10,7 @@ struct ConversationView: View {
     
     var body: some View {
         NavigationView {
-            ScrollView {
+            ReverseScrollView {
                 VStack {
                     ForEach(self.conversation.messages) { message in
                         return BubbleView(message: message.body)
