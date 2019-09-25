@@ -11,7 +11,7 @@ struct ConversationView: View {
     var body: some View {
         NavigationView {
             ReverseScrollView {
-                VStack {
+                VStack(spacing: 8) {
                     ForEach(self.conversation.messages) { message in
                         return BubbleView(message: message.body)
                     }
